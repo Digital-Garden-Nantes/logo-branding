@@ -9,7 +9,7 @@
 - Lien vers les guidelines de marque
 - Ouverture du logo dans un nouvel onglet
 - Aucune dépendance, compatible avec tous les frameworks et CMS
-- Accessible, responsif, customisable via variables CSS
+- Responsif, customisable via variables CSS
 
 ## ⚡ Installation
 
@@ -19,14 +19,14 @@ npm install logo-branding<NOM A MODIFIER>
 ```
 Et importe le JS et le CSS :
 ```js
-import 'logo-branding/dist/logo-branding.js';<URL A MODIFIER>
-import 'logo-branding/dist/logo-branding.css';<URL A MODIFIER>
+import 'logo-branding/dist/logo-branding.js'; <URL A MODIFIER>
+import 'logo-branding/dist/logo-branding.css'; <URL A MODIFIER>
 ```
 
 **Via CDN**
 ```html
-<script src="https://cdn.jsdelivr.net/npm/logo-branding@latest/dist/logo-branding.min.js"></script><URL A MODIFIER>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/logo-branding@latest/dist/logo-branding.min.css"><URL A MODIFIER>
+<script src="https://cdn.jsdelivr.net/npm/logo-branding@latest/dist/logo-branding.min.js"></script> <URL A MODIFIER>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/logo-branding@latest/dist/logo-branding.min.css"> <URL A MODIFIER>
 ```
 
 ## 🚀 Utilisation
@@ -58,7 +58,8 @@ Le style est conçu pour être facilement modifiable :
 
 ```css
 .lb-popup {
-  --border-color: #ddd;
-  --background-color: #fff;
-  --font-color: #000;
+    --border-color: #ddd;
+    --background-color: #fff;
+    --font-color: #000;
+}
 ```
