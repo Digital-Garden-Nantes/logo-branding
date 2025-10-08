@@ -1,0 +1,85 @@
+[logo-branding] {
+  position: relative;
+}
+
+.lb-popup {
+  --border-color: #ddd;
+  --background-color: #fff;
+  --hover-background-color: #f6f8f9;
+  --font-color: #000;
+  --font-family: sans-serif;
+  font-family: var(--font-family);
+  border: .0625rem solid var(--border-color);
+  background-color: var(--background-color);
+  width: max-content;
+  border-radius: .5rem;
+  animation: appear .3s ease-in-out forwards;
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: 100%;
+  color: var(--font-color);
+  text-decoration: none;
+
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(5%);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  > * {
+    display: block;
+    padding: .5rem 1rem;
+    transition: .3s ease-in-out background-color;
+
+    &:hover {
+      background-color: var(--hover-background-color);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .lb {
+    &-target-blank-link {
+      border-block-end: .0625rem solid var(--border-color);
+    }
+
+    &-btn {
+      font-size: .75rem;
+      padding: .25rem;
+      border-radius: .125rem .25rem;
+      border: .0625rem solid var(--border-color);
+      background-color: var(--background-color);
+
+      &:first-of-type {
+        margin-inline-start: auto;
+      }
+    }
+
+    &-target-blank-link,
+    &-logo,
+    &-icon,
+    &-branding-link{
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    position: fixed;
+    inset-inline: 0;
+    inset-block-end: 0;
+    inset-block-start: auto;
+    width: 100%;
+    border-radius: .5rem .5rem 0 0;
+  }
+}
