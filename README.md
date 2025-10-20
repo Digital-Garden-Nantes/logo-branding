@@ -15,7 +15,7 @@
 
 **Via npm**
 ```bash
-npm install logo-branding<NOM A MODIFIER>
+npm install @digital-garden-nantes/logo-branding
 ```
 Et importe le JS et le CSS :
 ```js
@@ -25,8 +25,8 @@ import 'logo-branding/dist/logo-branding.css'; <URL A MODIFIER>
 
 **Via CDN**
 ```html
-<script src="https://cdn.jsdelivr.net/npm/logo-branding@latest/dist/logo-branding.min.js"></script> <URL A MODIFIER>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/logo-branding@latest/dist/logo-branding.min.css"> <URL A MODIFIER>
+<script src="https://cdn.digitalgarden.fr/logo-branding/logo-branding@latest/dist/logo-branding.min.js"></script> <URL A MODIFIER>
+<link rel="stylesheet" href="https://cdn..digitalgarden.fr/logo-branding/logo-branding@latest/dist/logo-branding.min.css"> <URL A MODIFIER>
 ```
 
 ## 🚀 Utilisation
