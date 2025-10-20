@@ -19,9 +19,8 @@ npm install @digital-garden-nantes/logo-branding
 ```
 Et importe le JS et le CSS :
 ```js
-import 'logo-branding/dist/logo-branding.js'; <URL A MODIFIER>
-import 'logo-branding/dist/logo-branding.css'; <URL A MODIFIER>
-```
+import '@digital-garden-nantes/logo-branding/dist/logo-branding.js';
+import '@digital-garden-nantes/logo-branding/dist/logo-branding.css';
 
 **Via CDN**
 ```html
