@@ -9,13 +9,15 @@ const logoBranding = () => {
         logo.addEventListener('contextmenu', (event: MouseEvent) => {
             event.preventDefault()
             if (document.querySelector('.lb-popup')) return
-            createPopup(logo);
+            const href= logo.getAttribute('href')
+            createPopup(logo, href);
         })
     })
 }
 
 //Création de la popup
-const createPopup = (logo: HTMLAnchorElement) => {
+const createPopup = (logo: HTMLAnchorElement, href: string | null) => {
+    logo.removeAttribute('href')
     const popup = document.createElement('div')
     popup.classList.add('lb-popup')
     createTargetBlankLink(logo, popup)
@@ -24,16 +26,17 @@ const createPopup = (logo: HTMLAnchorElement) => {
     if (logo.hasAttribute('lb-guidlines')) createBrandingLink(logo, popup)
     logo.appendChild(popup)
 
-    deletePopup(popup)
+    deletePopup(popup, logo, href)
 }
 
 //Suppression de la popup au clic en dehors
-const deletePopup = (popup: HTMLDivElement) => {
+const deletePopup = (popup: HTMLDivElement, logo: HTMLAnchorElement, href: string | null) => {
     document.addEventListener("click", (event: MouseEvent) => {
         const target = event.target as Node;
 
         if (!popup.contains(target)) {
             popup.remove();
+            href && logo.setAttribute('href', href);
         }
     });
 }
