@@ -1,6 +1,6 @@
 {
   "name": "@digital-garden-nantes/logo-branding",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Un module JavaScript qui ajoute une popup 'clic droit' sur votre logo pour faciliter le téléchargement des assets de marque (PNG/SVG), l'accès rapide aux guidelines et l'ouverture du lien dans un nouvel onglet.",
   "type": "module",
   "main": "./dist/logo-branding.js",

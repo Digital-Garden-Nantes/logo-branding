@@ -60,18 +60,16 @@ const createIconLink = (logo: HTMLAnchorElement, popup: HTMLDivElement) => {
     if (logo.getAttribute('lb-icon-svg')) {
         const linkSVG = document.createElement('a')
         linkSVG.classList.add('lb-btn')
-        const urlSVG = logo.getAttribute('lb-icon-svg') as string
-        linkSVG.href = urlSVG
-        linkSVG.download = urlSVG
+        linkSVG.href = logo.getAttribute('lb-icon-svg') as string
+        linkSVG.download = "icon.svg"
         linkSVG.textContent = 'SVG'
         container.appendChild(linkSVG)
     }
     if (logo.getAttribute('lb-icon-png')) {
         const linkPNG = document.createElement('a')
         linkPNG.classList.add('lb-btn')
-        const urlPNG = logo.getAttribute('lb-icon-png') as string
-        linkPNG.href = urlPNG
-        linkPNG.download = urlPNG
+        linkPNG.href = logo.getAttribute('lb-icon-png') as string
+        linkPNG.download = "icon.png"
         linkPNG.textContent = 'PNG'
         container.appendChild(linkPNG)
     }
@@ -86,18 +84,16 @@ const createLogoLink = (logo: HTMLAnchorElement, popup: HTMLDivElement) => {
     if (logo.hasAttribute('lb-logo-svg')) {
         const linkSVG = document.createElement('a')
         linkSVG.classList.add('lb-btn')
-        const urlSVG = logo.getAttribute('lb-logo-svg') as string
-        linkSVG.href = urlSVG
-        linkSVG.download = urlSVG
+        linkSVG.href = logo.getAttribute('lb-logo-svg') as string
+        linkSVG.download = "logo.svg"
         linkSVG.textContent = 'SVG'
         container.appendChild(linkSVG)
     }
     if (logo.hasAttribute('lb-logo-png')) {
         const linkPNG = document.createElement('a')
         linkPNG.classList.add('lb-btn')
-        const urlPNG = logo.getAttribute('lb-logo-png') as string
-        linkPNG.href = urlPNG
-        linkPNG.download = urlPNG
+        linkPNG.href = logo.getAttribute('lb-logo-png') as string
+        linkPNG.download = "logo.png"
         linkPNG.textContent = 'PNG'
         container.appendChild(linkPNG)
     }
