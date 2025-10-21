@@ -19,13 +19,13 @@ npm install @digital-garden-nantes/logo-branding
 ```
 Et importe le JS et le CSS :
 ```js
-import '@digital-garden-nantes/logo-branding/dist/logo-branding.js';
-import '@digital-garden-nantes/logo-branding/dist/logo-branding.css';
-
+import '@digital-garden-nantes/logo-branding/dist/logo-branding.min.js';
+import '@digital-garden-nantes/logo-branding/dist/logo-branding.min.css';
+```
 **Via CDN**
 ```html
-<script src="https://cdn.digitalgarden.fr/logo-branding/logo-branding@latest/dist/logo-branding.min.js"></script> <URL A MODIFIER>
-<link rel="stylesheet" href="https://cdn..digitalgarden.fr/logo-branding/logo-branding@latest/dist/logo-branding.min.css"> <URL A MODIFIER>
+<script src="https://cdn-01.digitalgarden.fr/logo-branding/logo-branding@latest/dist/logo-branding.min.js"></script>
+<link rel="stylesheet" href="https://cdn-01.digitalgarden.fr/logo-branding/logo-branding@latest/dist/logo-branding.min.css">
 ```
 
 ## 🚀 Utilisation
