@@ -8,7 +8,9 @@
   --hover-background-color: #f6f8f9;
   --font-color: #000;
   --font-family: sans-serif;
+  --font-weight: 400;
   font-family: var(--font-family);
+  font-weight: var(--font-weight);
   border: .0625rem solid var(--border-color);
   background-color: var(--background-color);
   width: max-content;
@@ -16,7 +18,7 @@
   animation: appear .3s ease-in-out forwards;
   position: absolute;
   inset-inline-start: 0;
-  inset-block-start: 100%;
+  inset-block-start: calc(100% + 1rem);
   color: var(--font-color);
   text-decoration: none;
 
