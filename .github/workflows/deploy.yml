@@ -34,18 +34,12 @@ jobs:
         uses: easingthemes/ssh-deploy@v5.1.0
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          REMOTE_PORT: ${{ secrets.REMOTE_PORT || 22 }}
+          REMOTE_HOST: ${{ vars.REMOTE_HOST }}
+          REMOTE_USER: ${{ vars.REMOTE_USER }}
+          REMOTE_PORT: ${{ vars.REMOTE_PORT }}
           SOURCE: "dist/"
-          TARGET: ${{ secrets.REMOTE_TARGET }}
+          TARGET: ${{ vars.REMOTE_TARGET }}
           EXCLUDE: "/node_modules/, /.git/, /.github/"
-          SCRIPT_BEFORE: |
-            echo "Preparing deployment..."
-            mkdir -p ${{ secrets.REMOTE_TARGET }}
-          SCRIPT_AFTER: |
-            echo "Deployment completed successfully!"
-            ls -la ${{ secrets.REMOTE_TARGET }}
 
       - name: Notify on failure
         if: failure()
